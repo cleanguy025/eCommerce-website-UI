@@ -1,0 +1,214 @@
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+video{
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	list-style-type: none;
+}
+p{
+	margin-bottom: 0;
+}
+header .start{
+	text-align: left;
+	padding: 40px 15px;
+}
+header .mid{
+	height: 110px;
+	padding: 40px 15px;
+}
+header .mid ul{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+}
+header .mid ul li{
+	padding: 5px 2.5px 2.5px 2.5px;
+	margin: 0 17.5px;
+	font-family: roboto regular;
+	font-size: 16px;
+	color: #29282d;
+	cursor: pointer;
+}
+header .mid ul li:hover{
+	font-weight: bold;
+	color: #fe3e57;
+	border-bottom: 1px solid #fe3e57;
+}
+header .end{
+	padding: 40px 15px;
+}
+header .end ul{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: flex-end;
+	align-items: center;
+}
+header .end ul li{
+	margin-left: 18px;
+}
+
+/* BANER BAN ĐẦU THEO FORM CỦA ĐỀ BÀI */
+.banner{
+	margin-bottom: 120px;
+}
+.bannerContent{
+	background: url('image/Blohg-main/Image_here.png');
+	height: 357px;	
+	text-align: center;
+	padding-top: 136px;
+}
+.bannerContent h3{
+	font-family: Roboto Regular;
+	font-size: 48px;
+	line-height: 48px;
+	color: #15181d;
+	margin-bottom: 30px;
+}
+.bannerContent p{
+	font-family: quicksand;
+	font-size: 16px;
+	line-height: 16px;
+	color: #828282;
+	margin-bottom: 0;
+}
+.bannerContent img{
+	margin-top: -8px;
+}
+#miniArrow{
+	margin-top: -2px; 
+}
+.bannerContent p span{
+	color: #fd4a61;
+}
+
+/* ------------------------------------- */
+
+ /* Test Banner with image slide with action Click */
+/* .banner {
+	margin-bottom: 120px;
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner #mainPic{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner #navigation{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.banner #navigation li{
+	margin: 10px;
+	cursor: pointer;
+}
+.banner #navigation li img{
+	border: 4px solid white;
+	border-radius: 4px;
+	transition: 0.5s ease;
+}
+.banner #navigation li img:hover{
+	border-radius: 4px;
+	transform: scale(1.2);
+}
+.banner h2{
+	position: absolute;
+	z-index: 100;
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	max-width: 1000px;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+} */
+
+/* --------------------- */
+
+main .container, header .container{
+	padding: 0;
+	max-width: 1170px;
+}	
+.eleBlog{
+	margin-bottom: 60px;
+	padding: 0;
+	border: 1px solid #ececec;
+}
+.eleBlog:hover{
+	border: 1px solid none;
+	box-shadow: 15px 15px 15px #f2f2f2;
+}
+.imgBlog-Blog{
+/* 	width: 370px;
+	height: 286.4px; */
+	margin-bottom: 30px;
+}
+.note-Blog{
+	line-height: 16px;
+	font-size: 16px;
+	font-family: quicksand;
+	color: #8d8d8d;
+	padding-left: 40px;
+}
+.note-Blog img{
+	margin-top: -7px;
+}
+.note-Blog p{
+	margin-bottom: 16px;
+}
+.eleBlog h3{
+	font-size: 22px;
+	font-family: roboto;
+	line-height: 32px;
+	margin-bottom: 20px;
+	padding: 0 40px;
+}
+.eleBlog a{
+	text-decoration: none;
+	padding-left: 40px;
+	font-family: Quicksand Medium;
+	font-size: 16px;
+	line-height: 26px;
+	color: #29282d;
+	display: block;
+	margin-bottom: 25px;
+}
+.eleBlog a:hover{
+	color: red;
+}
+
+@media (max-width: 1200px){
+	.menu-toggle{
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+	.menu-toggle{
+		display: block;
+		width: 40px;
+		height: 10px;
+		background: #ccc;
+	}
+}
